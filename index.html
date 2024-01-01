@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>台灣東印教會週報</title>
   <style>
     #scroll-wrapper {
-      -webkit-overflow-scrolling: touch;
       overflow-y: scroll;
-}
+    }
+    ::-webkit-scrollbar:vertical {
+      width: 12px;
+    }
+    ::-webkit-scrollbar:horizontal {
+      height: 12px;
+    }
   </style>
 </head>
 <body>
-  <iframe id="scroll-wrapper" src="church_news_20240107.pdf" width="100%" height="600vh"></iframe>
+  <!-- <iframe id="scroll-wrapper" src="church_news_20240107.pdf" width="100%" height="600vh"></iframe> -->
+  <embed src="church_news_20240107.pdf" type="application/pdf" width="100%" height="600vh">
 </body>
 </html>
