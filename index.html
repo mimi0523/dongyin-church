@@ -6,6 +6,10 @@
   <title>台灣東印教會週報</title>
 </head>
 <body>
-  <iframe src="church_news_20240107.pdf" width="100%" height="600vh" scrolling="yes"></iframe>
+  #scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+}
+  <iframe id="scroll-wrapper" src="church_news_20240107.pdf" width="100%"></iframe>
 </body>
 </html>
